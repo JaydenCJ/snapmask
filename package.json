@@ -1,0 +1,54 @@
+{
+  "name": "snapmask",
+  "version": "0.1.0",
+  "description": "JSON snapshot testing that auto-detects and masks timestamps, UUIDs, and counters before diffing. Volatility is inferred from value shape and cross-run variance — no hand-maintained matcher configs.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "snapmask": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "snapshot-testing",
+    "json",
+    "testing",
+    "masking",
+    "uuid",
+    "timestamp",
+    "diff",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/snapmask.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/snapmask#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/snapmask/issues"
+  }
+}

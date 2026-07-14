@@ -1,0 +1,58 @@
+{
+  "masked": {
+    "customer": {
+      "id": "<uuid:1>",
+      "memberSince": "2019-03-01",
+      "name": "Ada Lovelace",
+      "plan": "enterprise"
+    },
+    "etag": "<hex-digest:1>",
+    "items": [
+      {
+        "ownerId": "<uuid:1>",
+        "qty": 2,
+        "sku": "WIDGET-9",
+        "unitPrice": 1250
+      },
+      {
+        "ownerId": "<uuid:1>",
+        "qty": 1,
+        "sku": "SPROCKET-1",
+        "unitPrice": 480
+      }
+    ],
+    "pagination": {
+      "cursor": "<token:1>",
+      "hasMore": false
+    },
+    "requestId": "<uuid:2>",
+    "seq": "<counter:1>",
+    "servedAt": "<timestamp-iso:1>",
+    "tookMs": "<counter:2>",
+    "total": 2980
+  },
+  "name": "orders",
+  "rules": [
+    {
+      "kind": "hex-digest",
+      "path": "/etag",
+      "source": "variance"
+    },
+    {
+      "kind": "token",
+      "path": "/pagination/cursor",
+      "source": "variance"
+    },
+    {
+      "kind": "counter",
+      "path": "/seq",
+      "source": "variance"
+    },
+    {
+      "kind": "counter",
+      "path": "/tookMs",
+      "source": "variance"
+    }
+  ],
+  "snapmask": 1
+}

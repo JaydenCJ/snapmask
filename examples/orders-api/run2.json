@@ -1,0 +1,32 @@
+{
+  "requestId": "550e8400-e29b-41d4-a716-446655440000",
+  "servedAt": "2026-07-13T08:16:02Z",
+  "seq": 102,
+  "etag": "e4d909c290d0fb1ca068ffaddf22cbd0",
+  "tookMs": 9,
+  "customer": {
+    "id": "0b8f8f0e-2f6a-4c8e-9d3b-7a1c2e3f4a5b",
+    "name": "Ada Lovelace",
+    "plan": "enterprise",
+    "memberSince": "2019-03-01"
+  },
+  "items": [
+    {
+      "sku": "WIDGET-9",
+      "qty": 2,
+      "unitPrice": 1250,
+      "ownerId": "0b8f8f0e-2f6a-4c8e-9d3b-7a1c2e3f4a5b"
+    },
+    {
+      "sku": "SPROCKET-1",
+      "qty": 1,
+      "unitPrice": 480,
+      "ownerId": "0b8f8f0e-2f6a-4c8e-9d3b-7a1c2e3f4a5b"
+    }
+  ],
+  "pagination": {
+    "cursor": "w7d4n2vk9pq5r8s3",
+    "hasMore": false
+  },
+  "total": 2980
+}
