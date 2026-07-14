@@ -2,7 +2,7 @@
   "name": "snapmask",
   "version": "0.1.0",
   "description": "JSON snapshot testing that auto-detects and masks timestamps, UUIDs, and counters before diffing. Volatility is inferred from value shape and cross-run variance — no hand-maintained matcher configs.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
